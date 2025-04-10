@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Transactions</string>
+    <string name="summary">Summary :</string>
+    <string name="date">Transaction Date :</string>
+    <string name="debit">Debit :</string>
+    <string name="credit">Credit :</string>
+    <string name="gst">GST(15%) :</string>
 </resources>

@@ -30,6 +30,7 @@ class TransactionAdapter(private val onClick: (Transaction) -> Unit) :
             val transactionTextView = itemView.findViewById<TextView>(R.id.transactionText)
             val dateTextView = itemView.findViewById<TextView>(R.id.transactionDateText)
             summaryTextView.text = transaction.summary
+            //show the transaction value with color code (credit green, debit red)
             transactionTextView.text = if (transaction.isCredit) buildString {
                 append("$")
                 append(transaction.credit.toString())
