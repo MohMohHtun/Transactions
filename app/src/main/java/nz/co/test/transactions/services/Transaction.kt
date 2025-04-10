@@ -6,11 +6,11 @@ import java.math.RoundingMode
 import java.time.OffsetDateTime
 
 data class Transaction(
-    val id: Int,
-    val transactionDate: OffsetDateTime,
+    val id: String,
+    val transactionDate: String,
     val summary: String,
-    val debit: BigDecimal,
-    val credit: BigDecimal
+    val debit: BigDecimal = BigDecimal.ZERO,
+    val credit: BigDecimal = BigDecimal.ZERO
 ) : Serializable {
     //Extract gst from positive value (debit or credit), assuming the amount including GST
     val gst: BigDecimal
